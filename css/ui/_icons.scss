@@ -1,0 +1,33 @@
+// main: ../main.scss
+
+svg {
+    @include fill(#000);
+
+    .primary {
+        @include fill(#000);
+    }
+    .primary-inverted {
+        @include fill(#fff);
+    }
+    .secondary {
+        @include fill($brand-color);
+    }
+    .shadow {
+        @include fill(url('../img/imgs.svg#lineargradient'));
+    }
+}
+
+svg .bx, svg.bx {
+    width: 2em;
+    height: 2em;
+    vertical-align: text-top;
+
+    &.smaller {
+        width: 1.4em;
+        height: 1.4em;
+    }
+    &.bigger {
+        width: 3em;
+        height: 3em;
+    }
+}

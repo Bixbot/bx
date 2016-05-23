@@ -1,0 +1,36 @@
+// main: ../main.scss
+
+a {
+    color: $brand-color;
+
+    &:hover {
+        color: darken($brand-color, 20%);
+    }
+}
+.tabs {
+    list-style-type: none;
+    li {
+        display: inline;
+    }
+    a {
+        display: inline-block;
+        border: solid 2px $brand-color;
+        border-bottom: none;
+        padding: 0.5rem 1rem;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        text-decoration: none;
+
+        &.selected {
+            font-weight: bolder;
+            font-size: 110%;
+            background-color: $brand-color;
+            color: #fff;
+        }
+    }
+}
+.tab-container {
+    margin-top: -7px;
+    border: solid 2px $brand-color;
+    background: $brand-color;
+}

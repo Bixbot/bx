@@ -1,0 +1,21 @@
+// main: ../main.scss
+
+.leftmost {
+    text-align: left;
+}
+.middle {
+    text-align: center;
+}
+.rightmost {
+    text-align: right;
+}
+nav .rightmost, .nav .rightmost {
+    text-align: left;
+
+    @media only screen and (min-width: $medium-screen) {
+        text-align: right;
+    }
+}
+.stretch, .stretched {
+    width: 100%;
+}

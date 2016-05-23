@@ -1,0 +1,27 @@
+// main: ../main.scss
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', 'Liberation Sans', sans-serif;
+    font-weight: 300;
+}
+body {
+    font-size: 1.8rem;
+    line-height: 1.6em;
+}
+h2, p, ul {
+    margin: 0;
+    padding: 0.5rem 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+* {
+    box-sizing: border-box;
+}
+
+@if $restrict-image-size {
+    img, svg {
+        max-width: 100%;
+    }
+}

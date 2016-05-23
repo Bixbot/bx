@@ -1,0 +1,27 @@
+// main: ../main.scss
+
+.vertical-space {
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    &.large {
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+}
+.padding, .padded {
+    padding: 1em;
+}
+.padding-top {
+    padding-top: 1em;
+}
+.padding-bottom {
+    padding-bottom: 1em;
+}
+.spacious {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.spaced {
+    margin: 0.3em;
+}

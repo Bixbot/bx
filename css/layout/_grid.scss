@@ -1,0 +1,36 @@
+// main: ../main.scss
+
+.row {
+    display: block;
+    @media only screen and (min-width: $medium-screen) {
+        display: table;
+        border-spacing: 0.5rem 0;
+        width: 100%;
+    }
+}
+.bucket {
+    @extend .row;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.column, .columns {
+    @media only screen and (min-width: $medium-screen) {
+        display: table-cell;
+        &.one { width: 10%; }
+        &.two { width: 20%; }
+        &.three { width: 30%; }
+        &.four { width: 40%; }
+        &.five { width: 50%; }
+        &.six { width: 60%; }
+        &.seven { width: 70%; }
+        &.eight { width: 80%; }
+        &.nine { width: 90%; }
+        &.ten { width: 100%; }
+        &.one-third { width: 33.333%; }
+        &.two-thirds { width: 66.666%; }
+        &.half { width: 50%; }
+    }
+}

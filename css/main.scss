@@ -1,0 +1,46 @@
+// compileOnSave: true, compileCompressed: '../demo/bx.min.css'
+
+/*! Copyright (c) 2016 Bixbot
+    The MIT License (MIT) */
+
+// ========== Media query variables ==========
+$medium-screen: 700px;
+$large-screen: 960px;
+
+// ========== Style default variables ========
+$brand-color: #f50;
+$header-footer-bg: #090909;
+
+// ========== Switches =======================
+$do-normalize: true;
+$embed-opensans: true;
+$restrict-image-size: true;
+
+// ========== Paths ==========================
+$font-path: 'assets/Open-Sans/';
+
+// ========== Imports ========================
+@import 'utils/mixins';
+@import 'utils/visibility';
+
+@import 'base/normalize';
+@import 'base/open-sans';
+@import 'base/base';
+
+@import 'layout/grid';
+@import 'layout/nav';
+@import 'layout/footer';
+@import 'layout/spacing';
+@import 'layout/alignment';
+@import 'layout/specials';
+@import 'layout/ruler';
+
+@import 'ui/tabs';
+@import 'ui/tables';
+@import 'ui/forms';
+@import 'ui/icons';
+@import 'ui/code';
+@import 'ui/notifications';
+@import 'ui/checklist';
+
+@import 'theme/branding';

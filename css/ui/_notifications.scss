@@ -1,0 +1,49 @@
+// main: ../main.scss
+
+.notification {
+    display: block;
+    background-color: red;
+    border-radius: 0.4rem;
+    margin: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    color: #fff;
+    &:before {
+        display: inline-block;
+        width: 2em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    &.info {
+        background-color: #07c;
+        &:before { content: 'i'; font-family: monospace; }
+    }
+    &.warning {
+        background-color: #f31;
+        &:before { content: '❗'; }
+    }
+    &.pending {
+        background-color: #dd4;
+        color: #333;
+        &:before { content: '↻'; }
+    }
+    &.success {
+        background-color: #484;
+        &:before { content: '✓'; }
+    }
+}
+
+.button .bubble, button .bubble {
+    position: absolute;
+    top: -0.7em;
+    right: -0.7em;
+}
+
+.bubble {
+    display: inline-block;
+    background-color: #f31;
+    color: #fff;
+    padding: 0 0.7rem;
+    border-radius: 2rem;
+    opacity: 1;
+}
