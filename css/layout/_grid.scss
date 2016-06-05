@@ -19,6 +19,7 @@
 .column, .columns {
     @media only screen and (min-width: $medium-screen) {
         display: table-cell;
+        vertical-align: top;
         &.one { width: 10%; }
         &.two { width: 20%; }
         &.three { width: 30%; }
